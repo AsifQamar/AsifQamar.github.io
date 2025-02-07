@@ -498,7 +498,7 @@ footer {
 
         <section id="contact" class="container">
             <h2 class="section-title">Get in Touch</h2>
-            <form class="contact-form">
+<form class="contact-form" action="https://formspree.io/f/xgvozydl" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
@@ -520,15 +520,12 @@ footer {
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const formData = new FormData(contactForm);
-            const formObject = Object.fromEntries(formData);
-            console.log('Form submitted:', formObject);
-            contactForm.reset();
-            alert('Thank you for your message! I will get back to you soon.');
+            setTimeout(() => {
+                contactForm.reset();
+            }, 1000);
         });
     }
-
+});
     document.querySelectorAll('a[href^=""]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
