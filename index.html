@@ -270,6 +270,7 @@ body {
     transform: translateY(-5px);
     border-color: var(--primary-color);
 }
+
 .project-card img {
     width: 100%;
     height: 250px;
@@ -289,6 +290,21 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.tag {
+    background-color: rgba(0, 255, 135, 0.1);
+    color: var(--secondary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
 }
 
 .contact-form {
@@ -480,43 +496,39 @@ footer {
                         </div>
                     </div>
                 </div>
-                 <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="Ai.png" alt="Project 2">
-                        <div class="project-card-content">
-                            <h3>Hand Gesture controller</h3>
-                            <p>A responsive ML project using Python, Open CV etc to controll the youtube video using my hand gestures</p>
-                            <div class="project-links">
-                                <a href="https://www.linkedin.com/posts/asif-qamar-071709306_aiml-sih2024-learningneverstops-activity-7241379241395712000--W6N?utm_source=share&utm_medium=member_desktop" class="btn">Live Demo</a>
-                                <a href="https://github.com/AsifQamar/Hand-Gesture-Controller/blob/main/HandController.py" class="btn">View Code</a>
-                            </div>
-                        </div>
-                    </div>
                 <div class="project-card">
-                    <div class="project-image">
-                     <img src="https://i.pinimg.com/736x/13/69/0e/13690e94a0c1e2fddbfe438879c0255d.jpg" alt="Crop Prediction using AI">
-                    </div>
-                        <div class="project-content">
-                         <h3>Intelligent Crop Yield Forecasting and Optimal Crop Selection: A Machine Learning Approach for Precision Agriculture</h3>
-                         <p>Research paper on intelligent crop yield forecasting.</p>
-                        <div class="project-tags">
-                         <span class="tag">Machine Learning </span>
-                         <span class="tag"> Algorithms</span>
-                         <span class="tag">Data Visualization</span>
-                         <span class="tag">Flask</span>
-                        </div>
+                    <img src="Ai.png" alt="Project 2">
+                    <div class="project-card-content">
+                        <h3>Hand Gesture controller</h3>
+                        <p>A responsive ML project using Python, Open CV etc to controll the youtube video using my hand gestures</p>
                         <div class="project-links">
-                         <a href="https://www.akinik.com/products/3224/national-conference-on-communication-computing-and-iot-nccci2025" target="_blank"><i class="fas fa-external-link-alt"></i> Publish In</a>
+                            <a href="https://www.linkedin.com/posts/asif-qamar-071709306_aiml-sih2024-learningneverstops-activity-7241379241395712000--W6N?utm_source=share&utm_medium=member_desktop" class="btn">Live Demo</a>
+                            <a href="https://github.com/AsifQamar/Hand-Gesture-Controller/blob/main/HandController.py" class="btn">View Code</a>
                         </div>
                     </div>
                 </div>
-
-               
+                <div class="project-card">
+                    <img src="https://i.pinimg.com/736x/13/69/0e/13690e94a0c1e2fddbfe438879c0255d.jpg" alt="Crop Prediction using AI">
+                    <div class="project-card-content">
+                        <h3>Intelligent Crop Yield Forecasting and Optimal Crop Selection: A Machine Learning Approach for Precision Agriculture</h3>
+                        <p>Research paper on intelligent crop yield forecasting.</p>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Data Visualization</span>
+                            <span class="tag">Flask</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.akinik.com/products/3224/national-conference-on-communication-computing-and-iot-nccci2025" target="_blank" class="btn"><i class="fas fa-external-link-alt"></i> Publish In</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="container">
             <h2 class="section-title">Get in Touch</h2>
-<form class="contact-form" action="https://formspree.io/f/xgvozydl" method="POST">
+            <form class="contact-form" action="https://formspree.io/f/xgvozydl" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
